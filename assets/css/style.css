@@ -39,7 +39,7 @@ main .description {
 .image-name {
   text-align: center;
   color: gray;
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
 .featured{
@@ -74,17 +74,27 @@ main .description {
   .method li{
     font-weight: bolder;
   }
-  .foto img{
-    position: absolute;
-  cursor: pointer;
-  opacity: 0.9;
-  transition: 1s;
-  }
-  .foto iframe {
-    border: 0;
-  }
   
-  .active {
-    opacity: 0;
-    pointer-events: none;
-  }
+  
+  .poster {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+}
+.poster:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('https://www.simplyrecipes.com/thmb/WJ9A-kCHYEFnui06f7lqQUhKK5I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2020__12__Cranberry-Brie-Onion-Focaccia-LEAD-3-de2a320146654a1e975487ca943bfaa3.jpg');
+  background-size: cover;
+  transition: 1s ease;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.poster-active:after {
+  opacity: 0;
+  pointer-events: none;
+}
