@@ -1,0 +1,90 @@
+header img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 6vh;
+  color: rgb(16, 128, 113);
+}
+header p {
+  text-align: center;
+  color: rgb(16, 128, 113);
+}
+main {
+  margin: auto;
+  width: 35%;
+}
+main .description {
+  text-align: left;
+}
+
+
+.title,
+.description {
+  text-align: center;
+}
+
+.h-1 {
+  color: yellow;
+  background:yellow;
+  border: 0;
+  height: 1px;
+}
+.h-2,
+.h-3 {
+  color: rgb(180, 215, 226);
+  background:rgb(180, 215, 226);
+  border: 0;
+  height: 1px;
+}
+.image-name {
+  text-align: center;
+  color: gray;
+  opacity: 0.3;
+}
+
+.featured{
+  border-left: solid 1px;
+  color: yellow;
+  padding-left: 1.2rem;
+}
+
+.featured h2 {
+  color: rgba(245, 132, 57, 0.76);
+  margin-bottom: 0;
+  
+  
+}
+.featured > p,
+ a
+  {
+    color: rgb(7, 182, 182);
+    margin-top: 0;
+  }
+
+  main > h2 {
+    line-height: 5rem;
+  }
+  .ingredients p{
+    font-weight: bolder;
+    font-size: large;
+  }
+  .ingredients li{
+    line-height: 1.7rem;
+  }
+  .method li{
+    font-weight: bolder;
+  }
+  .foto img{
+    position: absolute;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 1s;
+  }
+  .foto iframe {
+    border: 0;
+  }
+  
+  .active {
+    opacity: 0;
+    pointer-events: none;
+  }
